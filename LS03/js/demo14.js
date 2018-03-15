@@ -23,15 +23,16 @@ var c = a+b;
 //String.prototype.split(separator?,limit?);
 
 //字符串常用方法，字符串的方法源于String.prototype
-
-var str2 = "abcdef".slice(2);
-var str3 = "abcdef".slice(2,5);
-var str4 = "abcdef".slice(-2);
-var str5 = "abcdef".slice(2,-2);
-
-var str6 = "abcdef".split("c");//返回数组
-var str7 = "abcdef".split("c",1);
-var str8 = "abcdef".split("c",2);
+//slice(start,end?) start必需 从何处开始选取 end 结束，如果是负数，规定从尾部结束选取
+//包含从start到end（不包括该元素）
+var str2 = "abcdef".slice(2);     //cdef
+var str3 = "abcdef".slice(2,5);   //cde 
+var str4 = "abcdef".slice(-2);   //ef
+var str5 = "abcdef".slice(2,-2);  //cd
+//split(separator,howmany)分割字符串  separator:必需 从参数的指定位置分割，howmany指定数组的最大长度
+var str6 = "abcdef".split("c");//返回数组 [ab,def]
+var str7 = "abcdef".split("c",1);   //[ab]
+var str8 = "abcdef".split("c",2);//[ab,def]
 
 var str9 = "abcdef".charAt(2);
 var str10 = "abcdef".charCodeAt(3);
