@@ -12,7 +12,7 @@ for(var i in arr){
 //for ... in 遍历对象
 var obj = {x:10,y:20,z:"30"};
 for(var k in obj){
-    console.log(k,obj[k],typeof obj[k]);
+    console.log(k,obj[k],typeof obj[k]);  //number number string
 }
 //
 var obj1 = {x:1};
@@ -22,4 +22,6 @@ obj2.z = 3;
 for(var k in obj2){
     console.log(k,obj2[k]);
 }
-
+//y 2 
+//z 3
+//x 1

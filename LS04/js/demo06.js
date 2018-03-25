@@ -7,3 +7,4 @@ function isStrictMode() {
 }
 "use stirct"
 console.log(isStrictMode());
+//严格模式下 this为undefined  非严格模式下this为全局变量。

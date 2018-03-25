@@ -12,3 +12,13 @@ var x = "1";
 console.log(++x); //2 注意++和--的隐式类型转换
 var x = "1";
 console.log(x+1);//11
+
+
+var x="1";
+x+=1;
+console.log(x);
+// 11  字符串
+undefined
+x/=1;
+console.log(x);
+// 11  number

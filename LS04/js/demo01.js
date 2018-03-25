@@ -5,22 +5,22 @@
 //Part1
 var a = [1,2,3];
 var b = a;
-console.log(a,b);
+console.log(a,b); //123  123
 b.pop();
-console.log(a,b);
+console.log(a,b);  //12   12
 b = [4,5,6];
-console.log(a,b);
+console.log(a,b);  //12  456
 
 //Part2
 function foo(x) {
     x.push(4);
     x = [5,6,7];
     x.push(8);
-    //console.log(x);
+    //console.log(x);  //5678
 }
 var a = [1,2,3];
 foo(a);
-console.log(a);
+console.log(a);  //1234
 
 //Part3
 function foo(x) {
