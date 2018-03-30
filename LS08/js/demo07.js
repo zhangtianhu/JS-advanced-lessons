@@ -8,9 +8,30 @@
 function add(x, y, f) {
     return f(x) + f(y);
 }
-add(2,3,function(x){return x+1;});//
-add(2,-3,Math.abs);//
+add(2,3,function(x){return x+1;});//7
+dd(2,-3,Math.abs);//a
 add(2,3,Math.sqrt);//2的开平方加3的开平方
+
+//练习使用高阶函数实现下述公式，要求函数复用
+//z = 2*(x+1)-3*y*y;
+//c = 2*a*a-3*(b-1);
+//k = 2*(i+1)-3(j-1);
+
+function foo(x,y,c1,c2){
+	return 2*c1(x)-3*c2(y);
+}
+function f1(x){
+	return x+1;
+}
+function f2(x){
+	return x-1;
+}
+function f3(x){
+	return x*x;
+}
+foo(1,1,f1,f3);//1
+foo(1,1,f3,f2);//2
+foo(1,1,f1,f2);//4
 
 //实例一  高阶函数一般应用 02
 var word_2 = "do another thing.";
@@ -91,6 +112,7 @@ document.addEventListener("click", function(){
 
 
 // Part 22222222222222222 函数作为返回值输出
+var x=46;
 var obj = {
     name:"obj",
     x:23,
@@ -105,6 +127,6 @@ var fun1 = function () {
 };
 obj.fun3 = fun1;
 obj.fun4 = fun1();
-console.log(obj.fun3());//输出什么
-console.log(obj.fun3()());//输出什么
-console.log(obj.fun4());//输出什么
+console.log(obj.fun3());//输出什么  f fun2(){return this.x}
+console.log(obj.fun3()());//输出什么 46
+console.log(obj.fun4());//输出什么  23

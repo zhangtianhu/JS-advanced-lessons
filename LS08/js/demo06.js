@@ -8,7 +8,7 @@ var foo = function (a,b){
 
     console.log(foo.arguments.length);
     // console.log(arguments.length);
-    var args = Array.prototype.splice.call(arguments,0);
+    var args = Array.prototype.splice.call(arguments,0); //转成数组
     console.log(args);
 };
 foo(1,2,3,4);
@@ -16,7 +16,7 @@ foo(1,2,3,4);
 
 //函数对象属性之length 形参个数
 function checkVarCount(a, b) {
-    if (checkVarCount.length !== arguments.length) {
+    if (checkVarCount.length !== arguments.length) {     //length 判断形参 arguments判断实参
         alert("The count of the parameters you passed into the function doesn't match the function definition.");
     }else{
         alert("Successfully call the function");
@@ -61,8 +61,8 @@ var obj = {
         this.foo1();
     }
 };
-obj.foo1();
-obj.foo2();
+obj.foo1();//null
+obj.foo2(); // f abc(){ this. foo1()}
 
 
 
