@@ -9,8 +9,8 @@ function foo() {
     }
     return bar();
 }
-foo();
-foo();
+foo();  //1    //被释放
+foo();  // 1
 */
 
 // 例一
@@ -24,7 +24,7 @@ function foo() {
 var a = foo();
 var b = foo();
 a();//1
-a();//2
+a();//2  //不释放
 b();//1
 /*
 // 例二
@@ -36,6 +36,6 @@ function checkScope() {
     }
     return f;
 }
-checkScope()();//输出什么
+checkScope()();//输出什么  //local scope
 */
 //查看JavaScript权威指南（第6版）184页中的描述

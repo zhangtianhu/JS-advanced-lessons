@@ -19,11 +19,13 @@ var i = function(){
 
 true && function(a,b){
     return a>b?a:b;
-}(5,9);
-
+}(5,9); //9
+0 && function(a,b){
+    return a>b?a:b;
+}(5,9); //0
 
 !function(x,y){
     return x==y?true:false; // === 返回什么
-}("5",5);
+}("5",5); //false 如果是===则是true
 
 //思考 !function(){return 2; }( ); 与 !function(){return 0; }();
