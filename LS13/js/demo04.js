@@ -14,7 +14,7 @@ console.log(obj.num);
 console.log(obj.str);
 console.log(obj.show());
 console.log(obj.__proto__);
-console.log(obj.__proto__ === Object.prototype);
+console.log(obj.__proto__ === Object.prototype); //true
 
 //通过Object工场方法创建JS对象,注：JS对象是通过原型链的方式实现的对象继承
 var newObj = Object.create(obj);//newObj的原型是obj

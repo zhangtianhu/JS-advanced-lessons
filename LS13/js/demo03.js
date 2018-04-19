@@ -5,7 +5,7 @@
 var o = {
     _x:1.0,//如果都写成x会怎样
     get x(){
-        return this._x;//如果都写成x会怎样
+        return this._x;//如果都写成x会怎样 
     },
     set x(val){
         this._x = val;//如果都写成x会怎样
@@ -26,7 +26,7 @@ var o = {
 };
 console.log(o.x);//1
 o.x = 2;
-console.log(o.x,o._x);//输出多少？
+console.log(o.x,o._x);//输出多少？ //1   1
 
 // 访问器属性 实例三
 var p1 = {
@@ -43,8 +43,8 @@ var p1 = {
         return this._age;
     }
 };
-p1.age = 178;
-console.log(p1.age);
+p1.age = 178;  //请设置正常年龄
+console.log(p1.age);   //23
 
 
 //访问器属性 综合实例

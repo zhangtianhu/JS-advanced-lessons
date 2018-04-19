@@ -13,14 +13,14 @@ var n = new Function();
 var o = new RegExp("\\d");
 
 // typeof
-console.log(typeof Array);
-console.log(typeof Function);
-console.log(typeof Date);
-console.log(typeof Number);
-console.log(typeof String);
-console.log(typeof Boolean);
-console.log(typeof Math);//和上边一样么？为什么
-console.log(typeof JSON);
+console.log(typeof Array);             //function
+console.log(typeof Function);           //function
+console.log(typeof Date);               //function
+console.log(typeof Number);             //function
+console.log(typeof String);             //function
+console.log(typeof Boolean);            //function
+console.log(typeof Math);//和上边一样么？为什么Object
+console.log(typeof JSON);               //object   
 
 // Part 2
 // instanceof
@@ -38,9 +38,9 @@ console.log(Array instanceof Function);
 console.log(Array instanceof Object);
 console.log(Date instanceof Function);
 console.log(Date instanceof Object);
-console.log(Math instanceof Function);
+console.log(Math instanceof Function);  //false
 console.log(Math instanceof Object);
-console.log(JSON instanceof Function);
+console.log(JSON instanceof Function);   //false
 console.log(JSON instanceof Object);
 
 

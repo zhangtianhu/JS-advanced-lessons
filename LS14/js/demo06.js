@@ -17,4 +17,4 @@ console.log(obj.toString);//原型链上有toString属性
 
 for(var k in obj){//通过for...in遍历所有原型链上的属性
     console.log(k,obj[k]);//是否能遍历到toString？
-}
+}                              //不能

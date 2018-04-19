@@ -8,9 +8,9 @@ Object.defineProperty(person,"name",{
     enumerable:true,
     value:"Mike"
 });
-console.log(person.name);//输出什么？
+console.log(person.name);//输出什么？  //mike
 person.name = "Lucy";
-console.log(person.name);//输出什么？
+console.log(person.name);//输出什么？  //mike
 delete person.name;
-console.log(person.name);//输出什么？
+console.log(person.name);//输出什么？   //mike
 

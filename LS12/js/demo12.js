@@ -42,4 +42,4 @@ function fn() {
 }
 var f1 = fn();
 var max = 100;
-f1(15);
+f1(15);  //15

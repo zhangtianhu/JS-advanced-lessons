@@ -23,8 +23,9 @@ var obj3 = {};
 for(var i=0;i<10;i++){
     obj3.i = i;
 }
-
+//9
 var obj4 = {};
 for(var i=0;i<10;i++){
     obj4[i] = i;
 }
+//9

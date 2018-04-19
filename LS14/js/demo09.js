@@ -28,5 +28,5 @@ for(var k in obj){
 }
 //console.log(obj.w);//有w，但上边for...in遍历不到
 
-
+// writable未指定，为false
 //通过属性特性描述符来查看某一对象属性的特性
